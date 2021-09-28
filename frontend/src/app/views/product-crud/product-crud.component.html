@@ -1,0 +1,25 @@
+<mat-form-field appearance="outline">
+    <mat-label>Nome</mat-label>
+    <input matInput  [(ngModel)]="products.name" name="Nome">
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Price</mat-label>
+    <input matInput placeholder="Price" [(ngModel)]="products.price" name="name">
+  </mat-form-field>
+<button mat-raised-button (click)="Search()"
+    color="primary">
+    Buscar
+</button>
+<button mat-raised-button (click)="navigateToProductCreate()"
+    color="primary">
+    Novo Produto
+</button>
+<button mat-raised-button (click)="CleanFields()"
+    color="primary">
+    Limpar
+</button>
+<button mat-raised-button (click)="CleanFields()"
+    color="primary">
+    Download
+</button>
+<app-product-read></app-product-read>
